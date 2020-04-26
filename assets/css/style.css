@@ -8,7 +8,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  background-color: #eee;
+  background-color: #fff;
   color: #000;
 }
 /* transparent navbar */
@@ -44,26 +44,22 @@ a:hover {
   background-color: rgba(83, 0, 0, 0.2);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
-
+/* this no longer aligns with HTML structure. Revisit */
+/*
 .navbar .container-fluid {
   width: 85%;
   display: inline-flex;
   justify-content: space-between;
 }
-
+*/
 .navbar .navbar-brand {
   order: 0;
-  font-size: 20px;
+  font-size: 20px; 
   font-weight: 900;
-}
-
-.navbar .nav {
-flex-grow: 1;
-justify-content: flex-end;
+  position: relative;
 }
 
 .navbar .nav-item {
-  padding: .5rem .5rem;
   display: block;
   width: auto;
   font-weight: 800;
