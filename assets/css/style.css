@@ -1,4 +1,5 @@
 /* Why are these padding and margin values not applied to .navbar by default? */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +12,7 @@ body {
   color: #000;
 }
 /* transparent navbar */
-.header {
+/* .header {
   position: fixed;
   top: 0;
   left: 0;
@@ -19,43 +20,7 @@ body {
   height: 80px;
   background-color: rgba(83, 0, 0, 0.2);
 }
-
-.navbar {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-
-.navbar-nav {
-  list-style-type: none;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 5%;
-  margin: 0px;
-}
-
-.nav-brand {
-  flex-grow: 1;
-  order: 0;
-}
-
-.nav-item {
-  padding: 5px 25px;
-  display: block;
-  width: auto;
-  font-weight: 800;
-  font-size: 16px;
-  order: 1;
-}
-
-.navbar-name {
-  font-size: 20px;
-  font-weight: 900;
-}
+*/
 
 a {
   text-decoration: none;
@@ -65,6 +30,46 @@ a {
 a:hover {
   text-decoration: none;
   color: #999;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(83, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.navbar .container-fluid {
+  width: 85%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.navbar .navbar-brand {
+  order: 0;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.navbar .nav {
+flex-grow: 1;
+justify-content: flex-end;
+}
+
+.navbar .nav-item {
+  padding: .5rem .5rem;
+  display: block;
+  width: auto;
+  font-weight: 800;
+  font-size: 16px;
+  order: 1;
+
 }
 
 footer {
