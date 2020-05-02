@@ -8,50 +8,133 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     />
-    <title>Rachael Adu | Developer</title>
+    <title>Contact | Rachael Adu</title>
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Raleway|Montserrat&display=swap"
+      href="https://fonts.googleapis.com/css?family=Fjalla+One|Raleway&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
-      <nav class="navbar">
-        <div class="container-fluid">
-        <a class="nav-link navbar-brand" href="./index.html">RACHAEL ADU</a>
+    <header class="masthead">
+      <nav class="navbar navbar-expand-md fixed-top navbar-light">
+        <div class="container">
+          <!-- Branding -->
+          <a class="navbar-brand" href="index.html">RACHAEL ADU</a>
 
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active disabled" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
+          <!-- Navigation toggler/collapsible button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation links -->
+          <div class="navbar-collapse collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
+    </header>
 
-      <header class="header">
+    <main class="non-hero">
+      <!--Contact form header text-->
+      <div class="container page-section">
+        <div class="col-sm-12">
+          <h2>CONTACT</h2>
+          <br />
+          <h5>
+            Have any questions or want to collaborate? Shoot me a line!
+          </h5>
+        </div>
 
-      </header>
-
-    <main>
-      
+        <!--Main contact form-->
+        <form
+          action="a.durachael+github@gmail.com"
+          method="POST"
+          enctype="text/plain="
+          id="contact-form"
+          name="contact-form"
+          class="col-sm-12"
+        >
+          <div class="form-group">
+            <label for="name">Your Name (Required)</label>
+            <input type="text" class="form-control" id="your-name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email (Required)</label>
+            <input type="text" class="form-control" id="your-email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" id="your-subject" />
+          </div>
+          <div class="form-group">
+            <label for="message">Mesage</label>
+            <textarea
+              type="text"
+              class="form-control"
+              id="your-message"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <!--<input type="submit" class="btn btn-success btn-send btn-primary" value="Send">-->
+            <a
+              class="btn btn-primary btn-send"
+              id="submit-btn"
+              onclick="document.getElementById('contact-form').submit();"
+              >Send</a
+            >
+          </div>
+        </form>
+      </div>
     </main>
 
-    <footer>
-      <small>&copy; Copyright</small>
+    <!--footer-->
+    <footer class="footer text-center">
+      <div class="container">
+        <small>2020 &copy; Rachael Adu</small>
+      </div>
     </footer>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   </body>
 </html>
